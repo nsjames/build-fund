@@ -38,25 +38,25 @@
     }
 </script>
 
-<section class="bg-white max-w-7xl mx-auto">
+<section class="max-w-7xl mx-auto px-6 relative">
     <p class="text-sm text-black/80 border-b border-black/40 pb-1">Join the discussion.</p>
     <div class="overflow-y-auto mt-10">
         {#each comments as comment}
             <section class="pb-2 border-b border-black/10 not-first:mt-10">
-                <section class="font-bold flex items-center justify-between">
+                <section class="font-bold flex max-lg:flex-col max-lg:items-start items-center justify-between">
                     <a href={`${getExplorerUrl()}/account/${comment.account}`} target="_blank" rel="noopener noreferrer"  class="flex gap-2 items-center group">
                         <img class="w-6 rounded-full" alt={comment.account} src={blo(`0x${comment.account}0000`)} />
                         <span class="group-hover:underline">
                             {comment.account}
                         </span>
                     </a>
-                    <section class="flex gap-2">
+                    <section class="flex gap-2 max-lg:mt-1">
                         <span class="text-xs font-medium text-gray-500">🔥 {comment.burned.toFixed(4)}</span>
                         <span class="text-xs font-medium text-gray-500">{timeAgo(comment.date)}</span>
                     </section>
 
                 </section>
-                <p class="text-md mt-2">{comment.message}</p>
+                <p class="text-md mt-2 max-lg:mt-4">{comment.message}</p>
             </section>
         {/each}
     </div>
