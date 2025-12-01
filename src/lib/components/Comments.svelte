@@ -38,7 +38,7 @@
     }
 </script>
 
-<section class="max-w-7xl mx-auto px-6 relative">
+<section class="max-w-7xl mx-auto max-lg:px-6 relative">
     <p class="text-sm text-black/80 border-b border-black/40 pb-1">Join the discussion.</p>
     <div class="overflow-y-auto mt-10">
         {#each comments as comment}
