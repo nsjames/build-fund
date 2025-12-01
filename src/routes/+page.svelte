@@ -28,7 +28,7 @@
                 COLOR_UPDATE_SPEED: 10,
             }} />
     </section>
-    <section class="pt-30 relative w-full flex justify-center items-center flex-col max-w-3xl mx-auto text-center text-white">
+    <section class="relative pt-30 relative w-full flex justify-center items-center flex-col max-w-3xl mx-auto text-center text-white">
       <figure class="text-sm font-bold italic">
         Roll up your sleeves, nerds.
       </figure>
@@ -53,7 +53,7 @@
 
     </section>
 
-    <section class="px-30 max-lg:px-6 mx-auto text-center mt-20 max-w-5xl">
+    <section class="relative px-30 max-lg:px-6 mx-auto text-center mt-20 max-w-5xl">
       <figure class="text-xs font-bold italic text-white/40">
         All products created through this process must be (even this one!):
       </figure>
